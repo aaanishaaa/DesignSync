@@ -1,7 +1,15 @@
 import React from 'react'
+import Navbar from './components/Navbar'
+import home from "./assets/home.jpg"
+import Home from './components/Hero'
 
-export const App = () => {
+const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div className="bg-cover bg-center h-screen" style={{ backgroundImage: `url(${home})` }}>
+      <Navbar />
+      <Home/>
+    </div>
+  );
+};
+
+export default App
